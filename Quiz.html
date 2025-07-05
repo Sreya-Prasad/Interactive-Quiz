@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title shown on browser tab -->
+    <title>Interactive Quiz</title>
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative Bubble Background -->
+    <!-- These spans will be styled in CSS to appear as animated bubbles -->
+    <div class="bubbles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Main heading of the quiz -->
+    <h1><b>BubbleQ</b></h1>
+    <br>
+    <!-- Container holding the quiz content -->
+    <div class="quiz-container">
+        <!-- Countdown timer -->
+        <div class="timer">Time Left: <span id="time">30</span>s</div>
+
+        <!-- Area to display the current question -->
+        <div class="question">Question will appear here</div>
+
+        <!-- Area to display the answer options -->
+        <div class="options"></div>
+
+        <!-- Button to submit answer-->
+        <button class="submit-btn" disabled 
+        style="width: 25%; height: auto; font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        Submit
+        </button>
+
+        <!-- Area to show the score after each question or at the end -->
+        <div class="result">Your score: <span id="score">0</span></div>
+
+        <!-- Button to restart the quiz -->
+        <button class="restart-btn">Restart Quiz</button>
+    </div>
+
+    <!-- Canvas for showing confetti animation on quiz completion -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- External library for confetti animation -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- JavaScript file to control quiz logic -->
+    <script src="index.js"></script>
+
+</body>
+</html>
