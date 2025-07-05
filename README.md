@@ -100,7 +100,7 @@ You can also customize:
 
 ```
 bubbleq-quiz/
-├── index.html         # Main HTML file
+├── Quiz.html         # Main HTML file
 ├── style.css          # All styles
 ├── index.js           # Quiz logic
 ├── assets/            # (Optional) Images or media
