@@ -154,8 +154,8 @@ You can also customize:
 ## 📁 Project Structure
 
 ```
-bubbleq-quiz/
-├── Quiz.html         # Main HTML file
+Ineractive-Quiz/
+├── index.html         # Main HTML file
 ├── style.css          # All styles
 ├── index.js           # Quiz logic
 ├── assets/            # (Optional) Images or media
